@@ -55,13 +55,14 @@ img.shape
 
 #### 3. Display the image using matplotlib imshow().
 ```
-import cv2
+
 import matplotlib.pyplot as plt
-img = cv2.imread('Eagle_in_Flight.jpg', cv2.IMREAD_GRAYSCALE)
-plt.imshow(img, cmap='gray')
-plt.title("Grayscale Eagle")
-plt.axis("off")  # Hide axes
+img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+plt.imshow(img_rgb)
+plt.title("Colour Eagle Image")
+plt.axis("off")
 plt.show()
+
 
 ```
 
