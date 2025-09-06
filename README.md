@@ -43,7 +43,7 @@ REG NO: 212224240031
 import cv2
 img = cv2.imread('Eagle_in_Flight.jpg', cv2.IMREAD_GRAYSCALE)
 cv2.imshow("Grayscale Eagle", img)
-cv2.waitKey(0)
+
 
 
 ```
